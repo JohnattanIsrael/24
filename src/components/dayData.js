@@ -67,14 +67,14 @@ export default class DayData extends Component {
   minuteTime = () => {
     return (
         <div className='time'>
-            <Moment className='time__hour' interval={60000}  format="hh:mm:ss A"></Moment>
+            <Moment className='time__hour' interval={60000}  format="hh:mm A"></Moment>
         </div>
     
     )
   };
 
   dateToday = () => {
-    return <Moment interval={30000}  format="DD/MM/YYYY"></Moment>;
+    return <Moment interval={1000}  format="DD/MM/YYYY"></Moment>;
   };
 
   handleToggleTemp = () => {

@@ -17,7 +17,6 @@ export default class App extends Component {
 
         <div className="day-nav"></div>
 
-        {/* <button onClick={() => this.fecthData()} >Get Data</button> */}
       </div>
     );
   }

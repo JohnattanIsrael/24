@@ -15,22 +15,26 @@
     &__temperature {
         @include smallData();
         &:hover {
-            font-size: 120px;
+            font-size: 135px;
+            letter-spacing: 6px;
         }
     }
     &__date {
-
         @include smallData();
+        
         &:hover {
             font-size: 100px;
+            letter-spacing: 6px;
         }
     }
     
 
     &__time {
         @include smallData();
+        
         &:hover {
-            font-size: 100px;
+            font-size: 130px;
+            letter-spacing: 6px;
         }
     }
     
