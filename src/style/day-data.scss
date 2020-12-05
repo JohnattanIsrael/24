@@ -4,6 +4,11 @@
     padding-left: 160px;
     transform: translateY(-90px);
 
+    @media screen and (max-width:700px) {
+        padding-left: 30px;
+        transform: translateY(0px);
+    }
+
 }
 
 .data {
@@ -12,11 +17,22 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @media screen and (max-width:700px) {
+        row-gap: 9px;
+    }
+
     &__temperature {
         @include smallData();
+
         &:hover {
             font-size: 135px;
             letter-spacing: 6px;
+
+            @media screen and (max-width:700px) {
+                font-size: 45px;
+                letter-spacing: 10px;
+            }
         }
     }
     &__date {
@@ -25,6 +41,11 @@
         &:hover {
             font-size: 100px;
             letter-spacing: 6px;
+
+            @media screen and (max-width:700px) {
+                font-size: 35px;
+                letter-spacing: 10px;
+            }
         }
     }
     
@@ -35,6 +56,11 @@
         &:hover {
             font-size: 130px;
             letter-spacing: 6px;
+
+            @media screen and (max-width:700px) {
+                font-size: 40px;
+                letter-spacing: 10px;
+            }
         }
     }
     

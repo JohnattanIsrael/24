@@ -2,3 +2,57 @@
     width: 100%;
     height: 60px;
 }
+
+.navbar-wrapper {
+    position: absolute;
+    transform: scaleX(-1);
+    display: flex;
+    padding: 50px 25px 20px;
+    column-gap: 50px;
+    transition: all .3s ease-in-out;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    cursor: pointer;
+
+    @media screen and (max-width:700px) {
+        flex-direction: column;
+        padding: 50px 30px 20px;
+        row-gap: 15px;
+        text-align: center;
+    }
+
+    .location {
+        color: rgba(255, 255, 255, 0.3);
+        padding: 5px;
+        border: solid 2px;
+        border-radius: 15px;
+    }
+
+    .hire-me{
+        padding-bottom: 8px;
+        transition: all .3s  ease-in-out;
+        &:hover{
+            color: rgba($color: #fff, $alpha: 1.0);
+            border-bottom: solid white 1px;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.7);
+    }
+    .christmas-link{
+        text-decoration: none;
+        padding-bottom: 8px;
+        transition: all .3s  ease-in-out;
+        &:hover{
+            color: rgba($color: #fff, $alpha: 1.0);
+            border-bottom: solid white 1px;
+        }
+    }
+    
+        
+    
+}
+

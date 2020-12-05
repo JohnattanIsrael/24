@@ -20,6 +20,9 @@ body {
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     -webkit-tap-highlight-color: transparent;
+
+    cursor: url('https://raw.githubusercontent.com/JohnattanIsrael/24/main/static/assets/christmas/christmas-cursor.png'), auto;
+
 }
 
 .home {
@@ -37,7 +40,7 @@ body {
 
 @import './mixins.scss';
 
-@import './nav.scss';
 @import './home.scss';
 @import './day-nav.scss';
 @import './day-data.scss';
+@import './nav.scss';
