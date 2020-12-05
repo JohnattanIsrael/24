@@ -1,4 +1,5 @@
 html {
+    height: 100%;
     font-size: 62.5%; // 1rem is 10px
 }
 
@@ -12,6 +13,7 @@ html {
 }
 
 body {
+    height: 100%;
     overflow-x: hidden;
     font-weight: normal;
 
@@ -22,8 +24,21 @@ body {
 }
 
 .home {
-    margin-top: 2rem;
     display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
     justify-items: center;
-    background-image: url('https://raw.githubusercontent.com/JohnattanIsrael/24/main/static/assets/christmas/christmas-1869902_1920.jpg');
+    background-image: url('https://raw.githubusercontent.com/JohnattanIsrael/24/main/static/assets/christmas/christmas-1869902.jpg');
+    height: 100vh;
+    width: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: scaleX(-1);
 }
+
+@import './mixins.scss';
+
+@import './nav.scss';
+@import './home.scss';
+@import './day-nav.scss';
+@import './day-data.scss';

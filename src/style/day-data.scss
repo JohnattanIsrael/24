@@ -1,0 +1,38 @@
+.day-data-wrapper {
+    height: 100%;
+    width: 100%;
+    padding-left: 160px;
+    transform: translateY(-90px);
+
+}
+
+.data {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__temperature {
+        @include smallData();
+        &:hover {
+            font-size: 120px;
+        }
+    }
+    &__date {
+
+        @include smallData();
+        &:hover {
+            font-size: 100px;
+        }
+    }
+    
+
+    &__time {
+        @include smallData();
+        &:hover {
+            font-size: 100px;
+        }
+    }
+    
+    
+}
