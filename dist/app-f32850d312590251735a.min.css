@@ -1,0 +1,226 @@
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  height: 100%;
+  overflow-x: hidden;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: transparent;
+  cursor: url("https://raw.githubusercontent.com/JohnattanIsrael/24/main/static/assets/christmas/christmas-cursor.png"), auto;
+}
+
+.home {
+  display: grid;
+  grid-template-rows: 1fr 5fr 1fr;
+  justify-items: center;
+  background-image: url("https://raw.githubusercontent.com/JohnattanIsrael/24/main/static/assets/christmas/christmas-1869902.jpg");
+  height: 100vh;
+  width: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: scaleX(-1);
+  cursor: url("https://raw.githubusercontent.com/JohnattanIsrael/24/main/static/assets/christmas/christmas-cursor.png"), auto;
+}
+
+.home__content {
+  color: white;
+  transform: scaleX(-1);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.home__content__left {
+  width: 100%;
+  height: 100%;
+}
+
+.day-nav {
+  cursor: url("https://raw.githubusercontent.com/JohnattanIsrael/24/main/static/assets/christmas/christmas-cursor.png"), auto;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-self: flex-end;
+}
+
+.day-nav a {
+  text-decoration: none;
+  transform: scaleX(-1);
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+@media screen and (max-width: 700px) {
+  .day-nav a {
+    text-align: center;
+  }
+}
+
+.day-data-wrapper {
+  height: 100%;
+  width: 100%;
+  padding-left: 160px;
+  transform: translateY(-90px);
+}
+
+@media screen and (max-width: 700px) {
+  .day-data-wrapper {
+    padding-left: 30px;
+    transform: translateY(0px);
+  }
+}
+
+.data {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (max-width: 700px) {
+  .data {
+    row-gap: 9px;
+  }
+}
+
+.data__temperature {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 30px;
+  letter-spacing: 12px;
+  transition: all .4s ease-in-out;
+}
+
+.data__temperature:hover {
+  font-size: 135px;
+  letter-spacing: 6px;
+}
+
+@media screen and (max-width: 700px) {
+  .data__temperature:hover {
+    font-size: 45px;
+    letter-spacing: 10px;
+  }
+}
+
+.data__date {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 30px;
+  letter-spacing: 12px;
+  transition: all .4s ease-in-out;
+}
+
+.data__date:hover {
+  font-size: 100px;
+  letter-spacing: 6px;
+}
+
+@media screen and (max-width: 700px) {
+  .data__date:hover {
+    font-size: 35px;
+    letter-spacing: 10px;
+  }
+}
+
+.data__time {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 30px;
+  letter-spacing: 12px;
+  transition: all .4s ease-in-out;
+}
+
+.data__time:hover {
+  font-size: 130px;
+  letter-spacing: 6px;
+}
+
+@media screen and (max-width: 700px) {
+  .data__time:hover {
+    font-size: 40px;
+    letter-spacing: 10px;
+  }
+}
+
+.nav {
+  width: 100%;
+  height: 60px;
+}
+
+.navbar-wrapper {
+  position: absolute;
+  transform: scaleX(-1);
+  display: flex;
+  padding: 50px 25px 20px;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  transition: all .3s ease-in-out;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar-wrapper {
+    flex-direction: column;
+    padding: 50px 30px 20px;
+    row-gap: 15px;
+    text-align: center;
+  }
+}
+
+.navbar-wrapper .location {
+  color: rgba(255, 255, 255, 0.3);
+  padding: 5px;
+  border: solid 2px;
+  border-radius: 15px;
+}
+
+.navbar-wrapper .hire-me {
+  padding-bottom: 8px;
+  transition: all .3s  ease-in-out;
+}
+
+.navbar-wrapper .hire-me:hover {
+  color: white;
+  border-bottom: solid white 1px;
+}
+
+.navbar-wrapper a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar-wrapper .christmas-link {
+  text-decoration: none;
+  padding-bottom: 8px;
+  transition: all .3s  ease-in-out;
+}
+
+.navbar-wrapper .christmas-link:hover {
+  color: white;
+  border-bottom: solid white 1px;
+}
+
+/*# sourceMappingURL=app-d13ce6385ca110eaa16d.map*/
