@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink } from "react-router-dom";
 
 export default class NavBar extends Component {
     render() {
@@ -7,9 +8,11 @@ export default class NavBar extends Component {
                 <div className='location'>
                     Datos de la Ciudad de México proveidos vía API
                 </div>
-                <a href='https://www.youtube.com/watch?v=ugyXd3IGFu0' className='christmas-link'>
-                    Ten una feliz navidad aún en el 2020
-                </a>
+                <div className='christmas-link'>
+                    <NavLink to="/travel" activeClassName="nav-link-active">
+                        Travel
+                    </NavLink>
+                </div>
                 <a href='https://www.linkedin.com/in/johnaangeles/' className='hire-me'>
                     Contrátame
                 </a>
