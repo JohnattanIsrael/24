@@ -1,0 +1,112 @@
+.form-weather-wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.select-city {
+    padding-top: 30px;
+
+    h1{
+        color: #FFDEFC;
+    }
+}
+
+.weather{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 160px;
+
+    a {
+        display: none;
+        justify-self: center;
+        text-decoration: none;
+        color: rgba($color: #2e2d40, $alpha: 0.8);
+        text-align: center;
+        font-size: 14px;
+        padding-bottom: 20px;
+
+        @media screen and (max-width: 700px) {
+            display: inline;
+            justify-self: baseline;
+            text-align: end;
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        display: grid;
+        gap: 170px;
+    }
+
+    &__derivation,
+    &__destination{
+        text-align: center;
+        color: #2e2d40;
+        width: 360px;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        box-shadow: 2px 2px 15px #F25CA2;
+        border-radius: 15px;
+        background: radial-gradient(circle, #F25CA2 , #F25ca2 10%, #2e2d40 80%);
+    }
+}
+
+.derivation,
+.destination {
+    width: 400px;
+    height: 500px;
+    display: grid;
+    grid-template-rows: 3fr 1.2fr;
+
+    &__above{
+        display: grid;
+        grid-template-rows: .7fr 1fr;
+
+        &__description {
+            color: #f2f2f2;
+            text-align: center;
+            padding-top: 75px;
+            font-size: 16px;
+            letter-spacing: 3px;
+        }
+
+        &__temperature{
+            font-weight: 900;
+            font-size: 90px;
+        }
+    }
+
+    &__bellow{
+        color: #f2f2f2;
+        font-size: 14px;
+        &__city{
+            font-weight: 500;
+            font-size: 20px;
+            letter-spacing: 3px;
+        }
+    }
+
+    &__info{
+        font-weight: 200;
+        padding-top: 20px;
+        letter-spacing: 2px;
+        &__feels-like{
+            padding: 4px;
+        }
+        &__minmax-temperature{
+            display: flex;
+            justify-content: center;
+            padding: 4px;
+
+            h3{
+                font-size: 12px;
+            }
+        }
+        &__humidity{
+            padding: 4px;
+        }
+    }
+}

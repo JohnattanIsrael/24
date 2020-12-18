@@ -112,29 +112,33 @@ class WeatherForm extends Component {
         // console.log('destination', this.state.destination);
         // console.log('derivation', this.state.derivation);
         return (
-            <div>
-                <div>
-                    <form onSubmit={(this.props.handleSubmit(this.handleSubmit))}>
-                        <div>
+            <div className='travel-weather'>
+                <div className='form-wrapper'>
+                    <form className='form' onSubmit={(this.props.handleSubmit(this.handleSubmit))}>
+                        <div className='form__derivation'>
                             <label>From</label>
                             <Field
+                                className='field'
                                 name='derivation'
                                 type='text'
                                 component='input'
+                                placeholder='ej. Mexico'
                             />
                         </div>
-                        <div>
+                        <div className='form__destination'>
                             <label>To</label>
                             <Field
+                            className='field'
                                 name='destination'
                                 type='text'
                                 component='input'
+                                placeholder='ej. Los Angeles'
                             />
                         </div>
                         <button type='submit'>Send</button>
                     </form>
                 </div>
-                <div>
+                <div className='form-weather-wrapper'>
                     <Weather
                         derivation={this.state.derivation}
                         destination={this.state.destination}

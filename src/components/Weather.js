@@ -18,7 +18,7 @@ export default class Weather extends Component {
                             {this.props.derivation_description}
                         </div>
                         <div className='derivation__above__temperature'>
-                            {this.props.derivation_temperature}
+                            {this.props.derivation_temperature} C°
                         </div>
                     </div>
                     <div className='derivation__bellow'>
@@ -27,16 +27,13 @@ export default class Weather extends Component {
                         </div>
                         <div className='derivation__info'>
                             <div className='derivation__info__feels-like'>
-                                {this.props.derivation_feels_like}
+                                Sensación: {this.props.derivation_feels_like} C°
                             </div>
-                            <div className='derivation__info__max-temperature'>
-                                {this.props.derivation_max_temperature}
-                            </div>
-                            <div className='derivation__info__min-temperature'>
-                                {this.props.derivation_min_temperature}
+                            <div className='derivation__info__minmax-temperature'>
+                                <h3>MIN</h3>&nbsp;{this.props.derivation_min_temperature}C°&nbsp;<h3>MAX</h3>&nbsp;{this.props.derivation_max_temperature}C°
                             </div>
                             <div className='derivation__info__humidity'>
-                                {this.props.derivation_humidity}
+                                Humedad: {this.props.derivation_humidity} %
                             </div>
 
                         </div>
@@ -44,7 +41,7 @@ export default class Weather extends Component {
                     </div>
                 </div>
             ) : (
-                    <div>
+                    <div className='select-city'>
                         <h1>Select the city of departure</h1>
                     </div>
                 )
@@ -61,7 +58,7 @@ export default class Weather extends Component {
                             {this.props.destination_description}
                         </div>
                         <div className='destination__above__temperature'>
-                            {this.props.destination_temperature}
+                            {this.props.destination_temperature} C°
                         </div>
                     </div>
                     <div className='destination__bellow'>
@@ -70,16 +67,13 @@ export default class Weather extends Component {
                         </div>
                         <div className='destination__info'>
                             <div className='destination__info__feels-like'>
-                                {this.props.destination_feels_like}
+                                Sensación: {this.props.destination_feels_like} C°
                             </div>
-                            <div className='destination__info__max-temperature'>
-                                {this.props.destination_max_temperature}
-                            </div>
-                            <div className='destination__info__min-temperature'>
-                                {this.props.destination_min_temperature}
+                            <div className='destination__info__minmax-temperature'>
+                                <h3>MIN</h3>&nbsp;{this.props.destination_min_temperature}C° &nbsp;<h3>MAX</h3>&nbsp;{this.props.destination_max_temperature}C°
                             </div>
                             <div className='destination__info__humidity'>
-                                {this.props.destination_humidity}
+                                Humedad: {this.props.destination_humidity} %
                             </div>
 
                         </div>
@@ -87,7 +81,7 @@ export default class Weather extends Component {
                     </div>
                 </div>
             ) : (
-                    <div>
+                    <div className='select-city'>
                         <h1>Select the city of Destination</h1>
                     </div>
                 )
@@ -97,13 +91,20 @@ export default class Weather extends Component {
     render() {
 
         return (
-            <div>
-                <div>
-                    {this.derivation()}
+            <div className='weather'>
+                <div className='weather__derivation'>
+                    <div className='weather__derivation__card'>
+                        {this.derivation()}
+                    </div>
                 </div>
-                <div>
-                    {this.destination()}
+                <div className='weather__destination'>
+                    <div className='weather__derivation__card'>
+                        {this.destination()}
+                    </div>
                 </div>
+                <a href="https://www.linkedin.com/in/johnaangeles/">
+                    Johnattan Martínez Angeles - FullStack Web Developer
+                </a>
             </div>
         );
     }

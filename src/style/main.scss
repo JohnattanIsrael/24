@@ -39,6 +39,9 @@ body {
     transform: scaleX(-1);
     cursor: url('https://raw.githubusercontent.com/JohnattanIsrael/24/main/static/assets/christmas/christmas-cursor.png'), auto;
 }
+input[type=text]:focus{
+    border: none;
+}
 
 @import './mixins.scss';
 
@@ -46,3 +49,5 @@ body {
 @import './day-nav.scss';
 @import './day-data.scss';
 @import './nav.scss';
+@import './travel-weather.scss';
+@import './weather.scss';

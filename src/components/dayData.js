@@ -56,7 +56,6 @@ export default class DayData extends Component {
         this.setState({
             temperature : response.data.current.temp
         })
-        console.log("very well", response.data.current.temp);
       })
       .catch(function (error) {
         // handle error

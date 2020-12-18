@@ -1,0 +1,108 @@
+.travel-weather{
+    height: 100vh;
+    width: 100vw;
+    background:#F2F2F2;
+
+}
+
+.form-wrapper {
+    padding-bottom: 0px;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+
+    @media screen and (max-width: 700px) {
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: end;
+        padding: 50px 20px;
+    }
+
+    &__derivation,
+    &__destination {
+
+        @media screen and (max-width: 700px) {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+        }
+        
+
+        label{
+            padding: 10px;
+            font-size: 20px;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: 600;
+            color: rgba($color: #2e2d40, $alpha: 0.8);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+    }
+
+    button {
+        margin-left: 10px;
+        font-size: 25px;
+        width: 80px;
+        background: transparent;
+        border: none;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 1s ease-in-out;
+
+        background: -webkit-linear-gradient(#F25CA2, #2e2d40);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        @media screen and (max-width: 700px) {
+            align-self: center;
+            padding: 30px;
+        }
+
+        &:hover{
+            font-size: 26px;
+            background: -webkit-linear-gradient(#2e2d40, #F25CA2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+
+.field{
+    text-align: left;
+    letter-spacing: 1px;
+    width: 400px;
+    height: 53px;
+    background: rgba($color: #2e2d40, $alpha: 0.02);
+    border: none;
+    border-radius: 3px;
+    font-size: 28px;
+    padding-left: 5px;
+    outline: none;
+
+    @media screen and (max-width: 700px) {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        width: 270px;
+    }
+    
+
+    &:focus{
+        outline: none;
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus, 
+    input:-webkit-autofill:active  {
+        color: rgba($color: #2e2d40, $alpha: 0.3);
+        box-shadow: 0 0 0 30px #f2f2f2 inset !important;
+        font-size: 28px;
+    }
+}
